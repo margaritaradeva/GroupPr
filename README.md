@@ -1,1 +1,1 @@
-# GitHub repository for the CS5079 Applied AI group projecct
+# GitHub repository for the CS5063 Evaluation of AI Systems group projecct
