@@ -1,0 +1,1002 @@
+[
+    {
+        "Question": "Nickelodeon został założony w 1979 roku przez którą firmę?",
+        "Pre-configured Answer": "Warner Amex",
+        "LLM Answer": "Nickelodeon został założony w 1979 roku przez Warner-Amex Satellite Entertainment.",
+        "Evaluation Scores": {
+            "Conciseness": -0.248,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Jaka jest maksymalna dopuszczalna waga cieląt w konkursie rodeo?",
+        "Pre-configured Answer": "350 funtów. Minimum to 200 funtów",
+        "LLM Answer": "Waga cieląt w konkursie rodeo różni się w zależności od organizacji i konkretnej imprezy. Jednak ogólnie przyjmuje się, że cielęta używane w rodeo powinny mieć wagę od 180 do 280 kg.",
+        "Evaluation Scores": {
+            "Conciseness": -1.146,
+            "Completeness": 0.25,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Ile czystego złota musi zawierać każdy złoty medal wręczany zwycięzcom zgodnie z zasadami MKOl?",
+        "Pre-configured Answer": "Co najmniej 6 gramów. Srebrne medale muszą ważyć co najmniej .925 srebra sterlingowego",
+        "LLM Answer": "Złote medale olimpijskie muszą zawierać co najmniej 92,5% srebra i być pokryte warstwą czystego złota o grubości co najmniej 6 gramów na kilogram.",
+        "Evaluation Scores": {
+            "Conciseness": 0.346,
+            "Completeness": 0.333,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Ile z czterech trofeów Wielkiego Szlema w tenisie jest złotych, a ile srebrnych?",
+        "Pre-configured Answer": "Tylko trofeum Wimbledonu jest złote; pozostałe, czyli U.S. Open, French Open i Australian Open, są srebrne",
+        "LLM Answer": "Wszystkie cztery trofea Wielkiego Szlema w tenisie są wykonane z różnych materiałów. \n- Puchar Rolanda Garrosa jest srebrny.\n- Puchar Wimbledonu jest srebrny.\n- Puchar US Open jest srebrny.\n- Puchar Australian Open jest srebrny.",
+        "Evaluation Scores": {
+            "Conciseness": -0.329,
+            "Completeness": 0.263,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Na jakim warzywie starożytny Egipcjanin składał przysięgę?",
+        "Pre-configured Answer": "Cebula. Jej okrągły kształt symbolizował wieczność",
+        "LLM Answer": "Cebuli. W starożytnym Egipcie cebula była uważana za symbol życia i płodności, a także była związana z przysięgą.",
+        "Evaluation Scores": {
+            "Conciseness": 0.318,
+            "Completeness": 0.222,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Który kraj jest drugi na świecie pod względem spożycia makaronu po Włoszech?",
+        "Pre-configured Answer": "Wenezuela, gdzie roczne spożycie makaronu wynosi 27,9 funta",
+        "LLM Answer": "Grecja jest drugim krajem na świecie pod względem spożycia makaronu po Włoszech.",
+        "Evaluation Scores": {
+            "Conciseness": 0.696,
+            "Completeness": 0.2,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto był egipskim prezydentem zamordowanym w 1981 roku?",
+        "Pre-configured Answer": "Sadat",
+        "LLM Answer": "Anwar as-Sadat.",
+        "Evaluation Scores": {
+            "Conciseness": 0.657,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Jak nazywają się dwie główne odnogi Nilu?",
+        "Pre-configured Answer": "Błękitny Nil i Biały Nil",
+        "LLM Answer": "Dwie główne odnogi Nilu to Nil Biały i Nil Błękitny.",
+        "Evaluation Scores": {
+            "Conciseness": 0.679,
+            "Completeness": 0.571,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Na granicy których dwóch krajów znajduje się Wodospad Wiktorii?",
+        "Pre-configured Answer": "Zambia i Zimbabwe",
+        "LLM Answer": "Wodospad Wiktorii znajduje się na granicy Zambii i Zimbabwe w Afryce Południowej.",
+        "Evaluation Scores": {
+            "Conciseness": -0.308,
+            "Completeness": 0.667,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Ile czasu Jonasz spędził w brzuchu wieloryba?",
+        "Pre-configured Answer": "Trzy dni i trzy noce",
+        "LLM Answer": "Według Biblii, Jonasz spędził 3 dni i 3 noce w brzuchu wieloryba.",
+        "Evaluation Scores": {
+            "Conciseness": 0.339,
+            "Completeness": 0.6,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Na jakie wydarzenie w lutym 1964 roku kaznodzieja Billy Graham złamał swoją zasadę nieoglądania telewizji w niedzielę?",
+        "Pre-configured Answer": "Pierwszy występ The Beatles w programie The Ed Sullivan Show",
+        "LLM Answer": "Billy Graham złamał swoją zasadę nieoglądania telewizji w niedzielę, aby obejrzeć występ The Beatles w programie Eda Sullivana w lutym 1964 roku.",
+        "Evaluation Scores": {
+            "Conciseness": -0.119,
+            "Completeness": 0.545,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Jak wysoki był Goliat, filistyński olbrzym zabity przez Dawida?",
+        "Pre-configured Answer": "Sześć łokci i piędź",
+        "LLM Answer": "Według Biblii, Goliat miał około 6 łokci i 1 piędź wzrostu. Przyjmuje się, że 1 łokieć to około 45 cm, a 1 piędź to około 7,5 cm. Zatem Goliat mógł mieć około 2,7-3 metrów wzrostu.",
+        "Evaluation Scores": {
+            "Conciseness": -0.784,
+            "Completeness": 0.8,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Za jaką „cenę” Ezaw sprzedał swoje pierworództwo swojemu bratu bliźniakowi Jakubowi?",
+        "Pre-configured Answer": "Potrawa z soczewicy (Księga Rodzaju 25:29-34)",
+        "LLM Answer": "Ezaw sprzedał swoje pierworództwo Jakubowi za miskę soczewicy (lub czerwonej zupy).",
+        "Evaluation Scores": {
+            "Conciseness": 0.518,
+            "Completeness": 0.111,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "W jakim języku pierwotnie napisano Nowy Testament?",
+        "Pre-configured Answer": "Po grecku",
+        "LLM Answer": "Nowy Testament został pierwotnie napisany w języku greckim, zwanym także greką koine.",
+        "Evaluation Scores": {
+            "Conciseness": -0.226,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jaka była całkowita liczba ludności świata w czasach Chrystusa?",
+        "Pre-configured Answer": "Około 200 milionów",
+        "LLM Answer": "Szacunki dotyczące liczby ludności świata w czasach Chrystusa różnią się, ale większość historyków i demografów uważa, że wynosiła około 150-300 milionów osób.",
+        "Evaluation Scores": {
+            "Conciseness": -0.617,
+            "Completeness": 0.8,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto napisał historię, na której Alfred Hitchcock oparł swój film z 1963 roku Ptaki?",
+        "Pre-configured Answer": "Daphne du Maurier, najbardziej znana z powieści Rebeka",
+        "LLM Answer": "Historia, na której oparto film \"Ptaki\" Alfreda Hitchcocka, została napisana przez Daphne du Maurier.",
+        "Evaluation Scores": {
+            "Conciseness": 0.46,
+            "Completeness": 0.333,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Czym zajmował się Franz Kafka w swojej codziennej pracy?",
+        "Pre-configured Answer": "Pracował w ubezpieczeniach",
+        "LLM Answer": "Franz Kafka pracował jako urzędnik w towarzystwie ubezpieczeniowym w Pradze.",
+        "Evaluation Scores": {
+            "Conciseness": 0.423,
+            "Completeness": 0.667,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Ile mil długości ma kanał łączący Pacyfik z Atlantykiem?",
+        "Pre-configured Answer": "50 mil",
+        "LLM Answer": "Kanał Panamski ma długość około 82 kilometrów.",
+        "Evaluation Scores": {
+            "Conciseness": -0.13,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Który artysta stworzył Katzenjammer Kids?",
+        "Pre-configured Answer": "Rudolph Dirks",
+        "LLM Answer": "Katzenjammer Kids to amerykański komiks stworzony przez Rudolpha Dirksa w 1897 roku.",
+        "Evaluation Scores": {
+            "Conciseness": -0.264,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jaką niepełnosprawność miał piosenkarz Al Hibbler?",
+        "Pre-configured Answer": "Był niewidomy",
+        "LLM Answer": "Al Hibbler, amerykański piosenkarz jazzowy, był niewidomy od urodzenia.",
+        "Evaluation Scores": {
+            "Conciseness": 0.292,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Która supermodelka była żoną Roda Stewarta?",
+        "Pre-configured Answer": "Rachel Hunter",
+        "LLM Answer": "Jest to Rachel Hunter i Alana Stewart.",
+        "Evaluation Scores": {
+            "Conciseness": 0.435,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Z jaką supermodelką był związany Joaquin Cortes w 1996 roku?",
+        "Pre-configured Answer": "Naomi Campbell",
+        "LLM Answer": "W 1996 roku Joaquín Cortés był związany z Naomi Campbell.",
+        "Evaluation Scores": {
+            "Conciseness": -0.035,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jak nazywał się rzecznik NATO podczas kryzysu w Kosowie w 1999 roku?",
+        "Pre-configured Answer": "Jamie Shea",
+        "LLM Answer": "Rzecznikiem NATO podczas kryzysu w Kosowie w 1999 roku był Jamie Shea.",
+        "Evaluation Scores": {
+            "Conciseness": -0.356,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto był obrońcą tytułu, gdy Andre Agassi po raz pierwszy wygrał Wimbledon?",
+        "Pre-configured Answer": "Michael Stich",
+        "LLM Answer": "Pete Sampras był obrońcą tytułu, gdy Andre Agassi po raz pierwszy wygrał Wimbledon w 1992 roku.",
+        "Evaluation Scores": {
+            "Conciseness": -0.41,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jak zmarł James F. Fixx, propagator joggingu dla zdrowia, w 1984 roku?",
+        "Pre-configured Answer": "Zawał serca podczas joggingu",
+        "LLM Answer": "James F. Fixx zmarł na atak serca podczas biegu w 1984 roku.",
+        "Evaluation Scores": {
+            "Conciseness": 0.589,
+            "Completeness": 0.5,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jak nazywał się pierwszy satelita meteorologiczny?",
+        "Pre-configured Answer": "Tiros",
+        "LLM Answer": "Pierwszym satelitą meteorologicznym był TIROS-1 (Television Infrared Observation Satellite), wystrzelony przez NASA 1 kwietnia 1960 roku.",
+        "Evaluation Scores": {
+            "Conciseness": -1.053,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jaki był pierwszy album Elvisa Presleya, który nie zawierał jego imienia w tytule?",
+        "Pre-configured Answer": "King Creole",
+        "LLM Answer": "Pierwszym albumem Elvisa Presleya, który nie zawierał jego imienia w tytule, był \"Loving You\" z 1957 roku.",
+        "Evaluation Scores": {
+            "Conciseness": -0.64,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto wygrał pierwszy od 40 lat amerykański finał French Open w latach 90.?",
+        "Pre-configured Answer": "Jim Courier",
+        "LLM Answer": "Jim Courier wygrał French Open w 1991 i 1992 roku, ale nie był to pierwszy amerykański finał od 40 lat. \nPierwszy amerykański finał od 40 lat miał miejsce w 1989 roku, kiedy Michael Chang pokonał Ivana Lendla w finale French Open.",
+        "Evaluation Scores": {
+            "Conciseness": -1.921,
+            "Completeness": 1.0,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Kto prowadził pierwsze odcinki kreskówek Różowa Pantera?",
+        "Pre-configured Answer": "Lenny Schulz",
+        "LLM Answer": "Pierwsze odcinki kreskówek Różowa Pantera były prowadzone przez Davida Nivena, ale głównym narratorem był głównie David Niven w wersji brytyjskiej, a w wersji amerykańskiej był to Man Ray, ale potem został zastąpiony przez Davida Nivena.",
+        "Evaluation Scores": {
+            "Conciseness": -1.936,
+            "Completeness": 0.0,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Kto w serialu Makin' It grał postać przypominającą Johna Travoltę?",
+        "Pre-configured Answer": "Billy Manucci",
+        "LLM Answer": "W serialu Makin' It główną rolę, inspirowaną postacią Johna Travolty z filmu \"Saturday Night Fever\", grał David Naughton.",
+        "Evaluation Scores": {
+            "Conciseness": -0.617,
+            "Completeness": 0.0,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Aktor, który grał Jacka Gellera w serialu Przyjaciele, był żonaty z którą gwiazdą?",
+        "Pre-configured Answer": "Elliott Gould poślubił Barbrę Streisand",
+        "LLM Answer": "Elliott Gould, aktor grający Jacka Gellera w serialu Przyjaciele, był żonaty z Barbrą Streisand.",
+        "Evaluation Scores": {
+            "Conciseness": 0.136,
+            "Completeness": 0.667,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto był pierwszym socjalistycznym premierem Grecji?",
+        "Pre-configured Answer": "Papandreu",
+        "LLM Answer": "Andreas Papandreu był pierwszym socjalistycznym premierem Grecji.",
+        "Evaluation Scores": {
+            "Conciseness": -0.128,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto pokonał najlepszy czas Carla Lewisa wynoszący 9,86 sekundy na 100 metrów?",
+        "Pre-configured Answer": "Leroy Burrell",
+        "LLM Answer": "Najlepszy czas Carla Lewisa na 100 metrów wynosił 9,86 sekundy. Został on pobity przez kilku sprinterów, w tym Franka Fredericksa, Maurice'a Greene'a i Usaina Bolta.",
+        "Evaluation Scores": {
+            "Conciseness": -1.172,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jak nazywa się ostatni francuski zwycięzca singla na Wimbledonie w tym stuleciu?",
+        "Pre-configured Answer": "Yvon Petra",
+        "LLM Answer": "Ostatnim francuskim zwycięzcą singla na Wimbledonie w tym stuleciu jest Amélie Mauresmo, która wygrała turniej w 2006 roku.",
+        "Evaluation Scores": {
+            "Conciseness": -0.811,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto był najstarszym zwycięzcą US Open w golfie w XX wieku?",
+        "Pre-configured Answer": "Hale Irwin",
+        "LLM Answer": "Najstarszym zwycięzcą US Open w golfie w XX wieku był Hale Irwin, który wygrał w 1990 roku w wieku 45 lat.",
+        "Evaluation Scores": {
+            "Conciseness": -0.699,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Gdzie wraca wiadomość e-mail, która została odrzucona?",
+        "Pre-configured Answer": "Nadawca",
+        "LLM Answer": "Wiadomość e-mail, która została odrzucona, wraca do nadawcy. Jest to realizowane przez serwer pocztowy, który wysyła powiadomienie o niezdeliverowanej wiadomości z powrotem do adresu e-mail nadawcy.",
+        "Evaluation Scores": {
+            "Conciseness": -1.502,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto był najwyższym rangą amerykańskim dyplomatą przetrzymywanym w ambasadzie w Teheranie?",
+        "Pre-configured Answer": "Bruce Laingen",
+        "LLM Answer": "Najwyższym rangą amerykańskim dyplomatą przetrzymywanym w ambasadzie w Teheranie był Bruce Laingen.",
+        "Evaluation Scores": {
+            "Conciseness": -0.496,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Kim byli dwaj pierwsi ludzie, którzy jeździli po powierzchni Księżyca?",
+        "Pre-configured Answer": "David Scott i James Irwin",
+        "LLM Answer": "Dwaj pierwsi ludzie, którzy jeździli po powierzchni Księżyca, to Neil Armstrong i Edwin \"Buzz\" Aldrin.",
+        "Evaluation Scores": {
+            "Conciseness": -0.356,
+            "Completeness": 0.2,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Gdzie znajduje się Great White Way?",
+        "Pre-configured Answer": "Nowy Jork (Broadway)",
+        "LLM Answer": "Great White Way to przydomek Broadwayu w Nowym Jorku, odnoszący się do oświetlenia teatrów i reklam wzdłuż tej słynnej ulicy.",
+        "Evaluation Scores": {
+            "Conciseness": -0.445,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Do którego szpitala przewieziono księżną Dianę po tragicznym wypadku?",
+        "Pre-configured Answer": "La Pitié-Salpêtrière",
+        "LLM Answer": "Księżna Diana po wypadku została przewieziona do szpitala Pitié-Salpêtrière w Paryżu.",
+        "Evaluation Scores": {
+            "Conciseness": -0.276,
+            "Completeness": 0.8,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Które dwa kraje Bliskiego Wschodu toczyły wojnę w latach 1980–1988?",
+        "Pre-configured Answer": "Iran i Irak",
+        "LLM Answer": "Wojna iracko-irańska toczyła się w latach 1980-1988 pomiędzy Irakiem i Iranem.",
+        "Evaluation Scores": {
+            "Conciseness": -0.23,
+            "Completeness": 0.333,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Z czym związana jest japońska sztuka bonsai?",
+        "Pre-configured Answer": "Miniaturowe drzewa",
+        "LLM Answer": "Japońska sztuka bonsai związana jest z uprawą i pielęgnacją miniaturowych drzew w pojemnikach. Sztuka ta wymaga cierpliwości, umiejętności i wiedzy, aby kształtować i pielęgnować drzewa w celu uzyskania pożądanych kształtów i rozmiarów.",
+        "Evaluation Scores": {
+            "Conciseness": -1.375,
+            "Completeness": 0.5,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Które dwa kraje graniczą z Liechtensteinem?",
+        "Pre-configured Answer": "Szwajcaria i Austria",
+        "LLM Answer": "Szwajcaria i Austria graniczą z Liechtensteinem.",
+        "Evaluation Scores": {
+            "Conciseness": 0.624,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jak często odbywają się wybory prezydenckie w USA?",
+        "Pre-configured Answer": "Co cztery lata",
+        "LLM Answer": "Wybory prezydenckie w USA odbywają się co 4 lata, w pierwszy wtorek po pierwszym poniedziałku listopada.",
+        "Evaluation Scores": {
+            "Conciseness": -0.203,
+            "Completeness": 0.667,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakie są dwie główne partie polityczne w USA?",
+        "Pre-configured Answer": "Demokraci i Republikanie",
+        "LLM Answer": "Dwie główne partie polityczne w USA to:\n\n1. Partia Demokratyczna\n2. Partia Republikańska",
+        "Evaluation Scores": {
+            "Conciseness": 0.069,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "W jakim celu Melvil Dewey opracował swój system dziesiętny w 1876 roku?",
+        "Pre-configured Answer": "Klasyfikowanie książek",
+        "LLM Answer": "Melvil Dewey opracował swój system dziesiętny w 1876 roku, aby uprościć i ujednolicić klasyfikację książek w bibliotekach. System ten, znany jako Klasyfikacja Dziesiętna Deweya, pozwala na szybkie i łatwe odnajdywanie książek na półkach.",
+        "Evaluation Scores": {
+            "Conciseness": -1.292,
+            "Completeness": 0.667,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakie pierwiastki występują w stanie czystym w naturze?",
+        "Pre-configured Answer": "Pierwiastki rodzime",
+        "LLM Answer": "W stanie czystym w naturze występują następujące pierwiastki: \n\n- metale szlachetne (np. złoto, platyna, srebro), \n- niektóre metale (np. miedź, cynk), \n- gaz szlachetny hel, \n- azot, \n- tlen, \n- węgiel w postaci diamentu i grafitu,",
+        "Evaluation Scores": {
+            "Conciseness": -1.361,
+            "Completeness": 0.5,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Która wielkość ma zarówno kierunek, jak i wartość?",
+        "Pre-configured Answer": "Wielkość wektorowa",
+        "LLM Answer": "Wielkością, która ma zarówno kierunek, jak i wartość, jest wektor.",
+        "Evaluation Scores": {
+            "Conciseness": 0.364,
+            "Completeness": 0.5,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Co jest przedmiotem badań nauki zwanej kriogeniką?",
+        "Pre-configured Answer": "Bardzo niskie temperatury",
+        "LLM Answer": "Kriogenika to dziedzina nauki zajmująca się badaniem właściwości materiałów w bardzo niskich temperaturach, bliskich zera absolutnego (0 K, -273,15°C).",
+        "Evaluation Scores": {
+            "Conciseness": -0.445,
+            "Completeness": 0.333,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakim zwierzęciem jest marmozeta?",
+        "Pre-configured Answer": "Amerykańska małpa",
+        "LLM Answer": "Marmozeta to małpa z rodziny pazurkowcowatych, zamieszkująca lasy deszczowe Ameryki Południowej.",
+        "Evaluation Scores": {
+            "Conciseness": -0.006,
+            "Completeness": 0.5,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Dlaczego ryby mają skrzela?",
+        "Pre-configured Answer": "Aby wchłaniać tlen",
+        "LLM Answer": "Ryby mają skrzela, ponieważ są to narządy oddechowe, które umożliwiają im pobieranie tlenu z wody. Skrzela są odpowiedzialne za wymianę gazową, czyli pobieranie tlenu i wydalanie dwutlenku węgla.",
+        "Evaluation Scores": {
+            "Conciseness": -1.01,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Nazwę jakiej rośliny Machiavelli wykorzystał jako tytuł jednej ze swoich książek?",
+        "Pre-configured Answer": "Mandragora",
+        "LLM Answer": "Machiavelli wykorzystał nazwę rośliny \"Książę\" nie zawiera nazwy rośliny, ale tytuł \"Książę\" nawiązuje do władcy. Jednak tytuł \"Mandragora\" nie pasuje do pytania, ale Machiigenlli napisał \"Mandragolę\" - komedię.",
+        "Evaluation Scores": {
+            "Conciseness": -1.584,
+            "Completeness": 1.0,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Kiedy u człowieka może wystąpić szybki ruch gałek ocznych (REM)?",
+        "Pre-configured Answer": "Podczas snu",
+        "LLM Answer": "Szybki ruch gałek ocznych (REM) występuje u człowieka podczas snu, zwłaszcza w fazie snu REM, która jest fazą snu, w której występują szybkie ruchy gałek ocznych, zwiększona aktywność mózgu i występują sny.",
+        "Evaluation Scores": {
+            "Conciseness": -1.214,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Które dwie planety potrzebują mniej czasu niż Ziemia na okrążenie Słońca?",
+        "Pre-configured Answer": "Merkury i Wenus",
+        "LLM Answer": "Dwie planety, które potrzebują mniej czasu niż Ziemia na okrążenie Słońca, to Merkury i Wenus, ale tylko Merkury i Wenus nie są poprawnymi odpowiedziami. Merkury i Mars też nie. Poprawna odpowiedź to Merkury i Wenus nie, tylko Merkury i inna planeta. \nPoprawna odpowiedź to Merkury i Wenus nie. Poprawna odpowiedź to Merk",
+        "Evaluation Scores": {
+            "Conciseness": -2.537,
+            "Completeness": 1.0,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Jak nazywały się dwie sondy kosmiczne wystrzelone w 1977 roku, które przesłały niezwykłe zdjęcia Jowisza, Saturna, Urana i Neptuna?",
+        "Pre-configured Answer": "Voyager 1 i Voyager 2",
+        "LLM Answer": "Dwie sondy kosmiczne wystrzelone w 1977 roku to Voyager 1 i Voyager 2.",
+        "Evaluation Scores": {
+            "Conciseness": 0.013,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Jaka jest charakterystyczna cecha gwiazdy neutronowej?",
+        "Pre-configured Answer": "Wielka gęstość",
+        "LLM Answer": "Gwiazda neutronowa to niezwykle gęsta gwiazda, której charakterystyczną cechą jest ogromna masa skupiona w bardzo małej objętości, co prowadzi do ekstremalnie silnego pola grawitacyjnego i ogromnej gęstości materii.",
+        "Evaluation Scores": {
+            "Conciseness": -1.191,
+            "Completeness": 0.667,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Góry Ural tworzą naturalną granicę między którymi dwoma kontynentami?",
+        "Pre-configured Answer": "Azją i Europą",
+        "LLM Answer": "Góry Ural tworzą naturalną granicę między Europą a Azją.",
+        "Evaluation Scores": {
+            "Conciseness": 0.217,
+            "Completeness": 0.333,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Co według Mikołaja Kopernika znajdowało się w centrum naszego wszechświata i jakie było powszechne przekonanie przed tym?",
+        "Pre-configured Answer": "Słońce - wcześniej ludzie wierzyli, że to Ziemia",
+        "LLM Answer": "Według Mikołaja Kopernika, w centrum naszego układu słonecznego znajduje się Słońce, a planety, w tym Ziemia, krążą wokół niego. Przed Kopernikiem powszechnie uważano, że Ziemia jest centrum wszechświata, a Słońce, Księżyc i gwiazdy krążą wokół niej (",
+        "Evaluation Scores": {
+            "Conciseness": -1.105,
+            "Completeness": 0.5,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Który męski wokalista zaśpiewał pierwszą linijkę oryginalnego singla Band Aid \"Do They Know It's Christmas\"?",
+        "Pre-configured Answer": "Paul Young",
+        "LLM Answer": "Pierwszą linijkę oryginalnego singla Band Aid \"Do They Know It's Christmas\" zaśpiewał Paul Young, a następnie Simon Le Bon z zespołu Duran Duran.",
+        "Evaluation Scores": {
+            "Conciseness": -0.956,
+            "Completeness": 1.0,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Który system binarny liczb używa których dwóch cyfr?",
+        "Pre-configured Answer": "1 i 0",
+        "LLM Answer": "System binarny używa dwóch cyfr: 0 i 1.",
+        "Evaluation Scores": {
+            "Conciseness": 0.213,
+            "Completeness": 0.333,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Za czyją śmierć w 1968 roku był odpowiedzialny James Earl Ray?",
+        "Pre-configured Answer": "Martina Luthera Kinga",
+        "LLM Answer": "James Earl Ray był odpowiedzialny za śmierć Martina Luthera Kinga Jr. w 1968 roku.",
+        "Evaluation Scores": {
+            "Conciseness": -0.015,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jaka była trudna metoda łapania muchy, o którą poproszono Daniela w filmie Karate Kid?",
+        "Pre-configured Answer": "Użycie pałeczek do jej złapania",
+        "LLM Answer": "W filmie Karate Kid, Daniel został poproszony o złapanie muchy za pomocą pałeczek.",
+        "Evaluation Scores": {
+            "Conciseness": 0.387,
+            "Completeness": 0.25,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Który zespół miał hit w latach 80. z singlem \"Broken Wings\"?",
+        "Pre-configured Answer": "Mr. Mister",
+        "LLM Answer": "Mr. Mister miał hit w latach 80. z singlem \"Broken Wings\".",
+        "Evaluation Scores": {
+            "Conciseness": -0.024,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakie są główne cztery grupy krwi?",
+        "Pre-configured Answer": "A, B, AB i 0",
+        "LLM Answer": "Główne cztery grupy krwi to:\n\nA, B, AB i 0 (zero).",
+        "Evaluation Scores": {
+            "Conciseness": 0.289,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Które dwie aktorki grają główne role w filmie \"Bezdomna\" z 1992 roku?",
+        "Pre-configured Answer": "Bridget Fonda i Jennifer Jason Leigh",
+        "LLM Answer": "W filmie \"Bezdomna\" z 1992 roku główne role grają Anna Dymna i Maria Chwalibóg",
+        "Evaluation Scores": {
+            "Conciseness": -0.027,
+            "Completeness": 0.167,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto zagrał główne role w filmie \"Trzej Amigos\" z 1986 roku?",
+        "Pre-configured Answer": "Chevy Chase, Steve Martin, Martin Short",
+        "LLM Answer": "Główne role w filmie \"Trzej Amigos\" z 1986 roku zagrali Steve Martin, Chevy Chase i Martin Short.",
+        "Evaluation Scores": {
+            "Conciseness": -0.097,
+            "Completeness": 0.667,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Z jakich trzech pierwiastków składają się węglowodany?",
+        "Pre-configured Answer": "Węgiel, Wodór i Tlen",
+        "LLM Answer": "Węglowodany składają się z trzech pierwiastków: węgla (C), tlenu (O) i wodoru (H).",
+        "Evaluation Scores": {
+            "Conciseness": -0.006,
+            "Completeness": 0.333,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Jakiego koloru są pionowe pasy na fladze włoskiej?",
+        "Pre-configured Answer": "Zielony, Biały i Czerwony",
+        "LLM Answer": "Zielone.",
+        "Evaluation Scores": {
+            "Conciseness": 0.628,
+            "Completeness": 0.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Jakie są dwa tradycyjne kolory Wimbledonu?",
+        "Pre-configured Answer": "Zielony i Fioletowy",
+        "LLM Answer": "Dwa tradycyjne kolory Wimbledonu to zielony i fioletowy.",
+        "Evaluation Scores": {
+            "Conciseness": 0.537,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Których czterech amerykańskich prezydentów twarze są wyrzeźbione na Mount Rushmore?",
+        "Pre-configured Answer": "George Washington, Thomas Jefferson, Theodore Roosevelt i Abraham Lincoln",
+        "LLM Answer": "Na Mount Rushmore znajdują się twarze czterech amerykańskich prezydentów: \n\n1. George'a Washingtona\n2. Thomasa Jeffersona\n3. Theodore'a Roosevelta\n4. Abrahama Lincolna.",
+        "Evaluation Scores": {
+            "Conciseness": -0.42,
+            "Completeness": 0.222,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "W druku czterokolorowym, znanym również jako CMYK, jakie cztery kolory są używane?",
+        "Pre-configured Answer": "Cyjan, Magenta, Żółty i Czarny",
+        "LLM Answer": "W druku czterokolorowym CMYK używane są cztery kolory: \n\n1. C - Cyan (błękitno-zielony)\n2. M - Magenta (różowo-czerwony)\n3. Y - Yellow (żółty)\n4. K - Key (czarny)",
+        "Evaluation Scores": {
+            "Conciseness": -0.49,
+            "Completeness": 0.6,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakie są pierwsze cztery księgi Biblii?",
+        "Pre-configured Answer": "Księga Rodzaju, Księga Wyjścia, Księga Kapłańska, Księga Liczb",
+        "LLM Answer": "Pierwsze cztery księgi Biblii to: \n\n1. Księga Rodzaju\n2. Księga Wyjścia\n3. Księga Kapłańska\n4. Księga Liczb",
+        "Evaluation Scores": {
+            "Conciseness": 0.497,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Które cztery amerykańskie stany zaczynają się na literę I?",
+        "Pre-configured Answer": "Idaho, Illinois, Indiana i Iowa",
+        "LLM Answer": "Cztery amerykańskie stany, które zaczynają się na literę I, to:\n\n1. Idaho\n2. Illinois\n3. Indiana\n4. Iowa",
+        "Evaluation Scores": {
+            "Conciseness": -0.135,
+            "Completeness": 0.8,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Bon Scott był wokalistą którego słynnego zespołu rockowego?",
+        "Pre-configured Answer": "AC/DC",
+        "LLM Answer": "Bon Scott był wokalistą zespołu AC/DC.",
+        "Evaluation Scores": {
+            "Conciseness": 0.015,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Jakie są imiona czworga dzieci, które wchodzą do Narnii w 'Lwie, Czarownicy i starej szafie'?",
+        "Pre-configured Answer": "Lucy, Peter, Susan i Edmund",
+        "LLM Answer": "Imiona czworga dzieci to: Piotr, Zuzanna, Edmund i Łucja.",
+        "Evaluation Scores": {
+            "Conciseness": 0.236,
+            "Completeness": 0.2,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Oko za oko, ząb za ząb. Według Księgi Wyjścia, co następuje dalej?",
+        "Pre-configured Answer": "Ręka za rękę, noga za nogę",
+        "LLM Answer": "Oko za oko, ząb za ząb, rękę za rękę, nogę za nogę.",
+        "Evaluation Scores": {
+            "Conciseness": 0.641,
+            "Completeness": 0.75,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Jak nazywał się kot, który przeżył zatopienie Bismarcka, HMS Cossack i HMS Ark Royal podczas II wojny światowej?",
+        "Pre-configured Answer": "Niezatapialny Sam",
+        "LLM Answer": "Kot, który przeżył zatopienie Bismarcka, HMS Cossack i HMS Ark Royal, nazywał się Oskar, ale później został przemianowany na Sam, a następnie na Unsinkable Sam.",
+        "Evaluation Scores": {
+            "Conciseness": -0.812,
+            "Completeness": 0.5,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakie są suche składniki suchego Martini?",
+        "Pre-configured Answer": "Gin i Wermut",
+        "LLM Answer": "Suche składniki suchego Martini to gin i suchy wermut (lub bardzo niewielka ilość).",
+        "Evaluation Scores": {
+            "Conciseness": -0.184,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jaki był pierwszy na świecie odrzutowy samolot pasażerski wprowadzony do służby komercyjnej?",
+        "Pre-configured Answer": "Comet",
+        "LLM Answer": "Pierwszym na świecie odrzutowym samolotem pasażerskim wprowadzonym do służby komercyjnej był de Havilland Comet.",
+        "Evaluation Scores": {
+            "Conciseness": -0.912,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Gdzie szarańcza składa jaja?",
+        "Pre-configured Answer": "W piasku",
+        "LLM Answer": "Szarańcza składa jaja w ziemi. Samica szarańczy wykopuje w ziemi otwór i składa w nim jaja, które następnie przykrywa ziemią.",
+        "Evaluation Scores": {
+            "Conciseness": -0.406,
+            "Completeness": 0.5,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Region geograficzny Patagonii znajduje się między którymi dwoma krajami Ameryki Południowej?",
+        "Pre-configured Answer": "Argentyną i Chile",
+        "LLM Answer": "Patagonia to region geograficzny położony w południowej części Ameryki Południowej, na terenie Argentyny i Chile.",
+        "Evaluation Scores": {
+            "Conciseness": -0.579,
+            "Completeness": 0.667,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Gdzie w ludzkim ciele znajduje się kość łódeczkowata?",
+        "Pre-configured Answer": "W nadgarstku",
+        "LLM Answer": "Kość łódeczkowata znajduje się w uchu środkowym. Jest jedną z trzech kosteczek słuchowych, obok młoteczka i kowadełka.",
+        "Evaluation Scores": {
+            "Conciseness": -0.258,
+            "Completeness": 0.5,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto zdobył złoty medal w pływaniu na 100 metrów stylem klasycznym na Olimpiadzie w Moskwie w 1980 roku?",
+        "Pre-configured Answer": "Duncan Goodhew",
+        "LLM Answer": "Złoty medal w pływaniu na 100 metrów stylem klasycznym na Olimpiadzie w Moskwie w 1980 roku zdobył Robin Cousins z Wielkiej Brytanii nie, to nieprawda. \nZłoty medal zdobył Duncan Goodhew z Wielkiej Brytanii.",
+        "Evaluation Scores": {
+            "Conciseness": -1.622,
+            "Completeness": 1.0,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Kto zdobył złoty medal w siedmioboju na Olimpiadzie w 2000 roku?",
+        "Pre-configured Answer": "Denise Lewis",
+        "LLM Answer": "Złoty medal w siedmioboju na Olimpiadzie w 2000 roku zdobyła Denise Lewis z Wielkiej Brytanii, ale później okazało się, że Eunice Barber z Francji również powinna otrzymać złoty medal, lecz Denise Lewis wygrała z nią różnicą zaledwie 53 punktów.",
+        "Evaluation Scores": {
+            "Conciseness": -2.052,
+            "Completeness": 1.0,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Podaj dowolny rok z życia Leonardo Da Vinci.",
+        "Pre-configured Answer": "1452 - 1519",
+        "LLM Answer": "Rok 1485.",
+        "Evaluation Scores": {
+            "Conciseness": 0.643,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakiego wzrostu są podobno Smerfy?",
+        "Pre-configured Answer": "Wysokości trzech jabłek",
+        "LLM Answer": "Smerfy mają podobno trzy jabłka wzrostu.",
+        "Evaluation Scores": {
+            "Conciseness": 0.693,
+            "Completeness": 0.2,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jaka temperatura jest taka sama w stopniach Celsjusza i Fahrenheita?",
+        "Pre-configured Answer": "-40 stopni",
+        "LLM Answer": "-40 stopni. Jest to temperatura, która jest taka sama w stopniach Celsjusza i Fahrenheita.",
+        "Evaluation Scores": {
+            "Conciseness": -0.31,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakie są dwa główne składniki sosu holenderskiego?",
+        "Pre-configured Answer": "Żółtka jaj i masło",
+        "LLM Answer": "Dwa główne składniki sosu holenderskiego to masło i żółtka jaj.",
+        "Evaluation Scores": {
+            "Conciseness": 0.457,
+            "Completeness": 0.4,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Jakie kolory mają flagi oznaczające strefę ratowników na plaży?",
+        "Pre-configured Answer": "Czerwony i Żółty",
+        "LLM Answer": "Flagi oznaczające strefę ratowników na plaży mają następujące kolory:\n\n- czerwona flaga oznacza zakaz kąpieli,\n- żółta flaga oznacza ostrożność, \n- zielona flaga oznacza bezpieczne warunki do kąpieli.",
+        "Evaluation Scores": {
+            "Conciseness": -0.978,
+            "Completeness": 0.0,
+            "Faithfulness": 0.0
+        }
+    },
+    {
+        "Question": "Film \"Uwolnić orkę\" z 1993 roku opowiadał o jakim zwierzęciu?",
+        "Pre-configured Answer": "Orka (Wieloryb zabójca)",
+        "LLM Answer": "Film \"Uwolnić orkę\" z 1993 roku opowiada o kaszalocie, czyli orce.",
+        "Evaluation Scores": {
+            "Conciseness": 0.444,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Który pierwiastek jest najpowszechniejszy w ludzkim ciele?",
+        "Pre-configured Answer": "Tlen 65%",
+        "LLM Answer": "Tlen jest najpowszechniejszym pierwiastkiem w ludzkim ciele, stanowiąc około 65% masy ciała.",
+        "Evaluation Scores": {
+            "Conciseness": -0.511,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakie dwa pierwiastki można znaleźć w centrum Ziemi?",
+        "Pre-configured Answer": "Żelazo i Nikiel",
+        "LLM Answer": "W centrum Ziemi znajdują się głównie dwa pierwiastki: żelazo (ok. 85%) i nikiel (ok. 10%).",
+        "Evaluation Scores": {
+            "Conciseness": -0.127,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Co jako pierwszy otrzymał Louis Washkansky w 1967 roku?",
+        "Pre-configured Answer": "Przeszczep ludzkiego serca",
+        "LLM Answer": "Louis Washkansky otrzymał pierwsze udane przeszczepienie serca w 1967 roku.",
+        "Evaluation Scores": {
+            "Conciseness": 0.371,
+            "Completeness": 0.333,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakie wymiary ma olimpijski lodowisko do łyżwiarstwa figurowego i hokeja? Czy 25x50 metrów, 27.5x50 metrów, czy 30x60 metrów?",
+        "Pre-configured Answer": "30x60 metrów",
+        "LLM Answer": "Olimpijskie lodowisko do łyżwiarstwa figurowego i hokeja ma wymiary 30x60 metrów dla łyżwiarstwa figurowego, a 30x60 metrów lub 25x60 metrów w przypadku hokeja w zależności od odmiany tego sportu (np. hokej na lodzie w USA i Kanadzie rozg",
+        "Evaluation Scores": {
+            "Conciseness": -1.831,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Wymień dwie żeńskie postacie z kreskówki Scooby Doo?",
+        "Pre-configured Answer": "Daphne i Velma",
+        "LLM Answer": "Dwie żeńskie postacie z kreskówki Scooby Doo to:\n\n1. Daphne Blake\n2. Velma Dinkley",
+        "Evaluation Scores": {
+            "Conciseness": -0.223,
+            "Completeness": 0.667,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto strzelił pierwszego Złotego Gola na Mistrzostwach Świata w 1998 roku?",
+        "Pre-configured Answer": "Laurent Blanc",
+        "LLM Answer": "Pierwszego Złotego Gola na Mistrzostwach Świata w 1998 roku strzelił Laurent Blanc w meczu Francja - Paragwaj.",
+        "Evaluation Scores": {
+            "Conciseness": -0.667,
+            "Completeness": 1.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Kto koronował Napoleona na cesarza?",
+        "Pre-configured Answer": "Sam się koronował",
+        "LLM Answer": "Napoleona na cesarza koronował papież Pius VII. Koronacja odbyła się 2 grudnia 1804 roku w katedrze Notre-Dame w Paryżu.",
+        "Evaluation Scores": {
+            "Conciseness": -0.19,
+            "Completeness": 0.333,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Titanic miał trzy kotwice. Jaka była ich łączna waga (w tonach)?",
+        "Pre-configured Answer": "31 ton",
+        "LLM Answer": "Łączna waga kotwic na Titanicu wynosiła około 31 ton.",
+        "Evaluation Scores": {
+            "Conciseness": -0.147,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    },
+    {
+        "Question": "Jak długa jest psia warta na morzu?",
+        "Pre-configured Answer": "Dwie godziny",
+        "LLM Answer": "To jest zabawne pytanie! Psia warta to jednostka czasu, a nie długości. Na morzu nie ma więc \"długości\" psiej warty. Psia warta to okres czasu, który trwa około 2 godzin.",
+        "Evaluation Scores": {
+            "Conciseness": -0.876,
+            "Completeness": 0.0,
+            "Faithfulness": 0.5
+        }
+    },
+    {
+        "Question": "Jakie jest stolica Szwajcarii?",
+        "Pre-configured Answer": "Berno",
+        "LLM Answer": "Stolicą Szwajcarii jest Berno.",
+        "Evaluation Scores": {
+            "Conciseness": 0.226,
+            "Completeness": 1.0,
+            "Faithfulness": 1.0
+        }
+    }
+]
