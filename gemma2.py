@@ -14,7 +14,7 @@ def answer_trivia(
     top_p=1.0,
     repetition_penalty=1.1
 ):
-    #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cpu")#cuda" if torch.cuda.is_available() else "cpu")
     
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
