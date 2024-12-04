@@ -1,2 +1,0 @@
-/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnv/bin/python: can't open file '/scratch/users/u01tu20/EvalProject/GroupPr/bertscript.py': [Errno 2] No such file or directory
-srun: error: gpu01: task 0: Exited with exit code 2
