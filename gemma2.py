@@ -1,3 +1,4 @@
+print("Program started")
 import pandas as pd
 print("pandas imported")
 import torch
