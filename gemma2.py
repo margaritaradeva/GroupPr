@@ -86,7 +86,7 @@ Question: {question}<end_of_turn>
 
 if __name__ == "__main__":
     answer_trivia(
-        input_file='trivia_questions.csv', 
+        input_file='trivia_qa_bulgarian.csv', 
         output_file='trivia_answers.csv',
         batch_size=10,
         temperature=0.1,
