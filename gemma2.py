@@ -1,7 +1,11 @@
 import pandas as pd
+print("pandas imported")
 import torch
+print("torch imported")
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
+print("transformers imported")
 import torch.nn as nn
+print("torch.nn imported")
 
 def answer_trivia(
     input_file, 
