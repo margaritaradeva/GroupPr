@@ -16,4 +16,4 @@
 module load miniconda3
 source activate EvalAlphaEnv
 
-srun python gemma2.py
+srun python gemma2.py --export=ALL
