@@ -1,6 +1,7 @@
 import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
+import torch.nn as nn
 
 def answer_trivia(
     input_file, 
@@ -21,6 +22,13 @@ def answer_trivia(
         attn_implementation="eager",
         device_map="auto"
     )
+    
+    # Wrap the model with DataParallel if multiple GPUs are available
+    if torch.cuda.device_count() > 1:
+        model = nn.DataParallel(model)
+    
+
+    model = model.to(device)
     
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
@@ -60,7 +68,7 @@ Question: {question}<end_of_turn>
         batch = df.iloc[i:i+batch_size]
         batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
         
-        inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True)
+        inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True).to(device)
         
         outputs = model.generate(**inputs, generation_config=generation_config)
         
@@ -88,7 +96,7 @@ if __name__ == "__main__":
     answer_trivia(
         input_file='trivia_qa_bulgarian.csv', 
         output_file='trivia_answers.csv',
-        batch_size=10,
+        batch_size=2,
         temperature=0.1,
         max_new_tokens=256
     )
