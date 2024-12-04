@@ -16,4 +16,4 @@
 module load anaconda3
 source activate EvalAlphaEnv
 
-srun python bertscript.py
+srun python gemma2.py
