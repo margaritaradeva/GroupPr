@@ -90,5 +90,5 @@ if __name__ == "__main__":
         output_file='trivia_answers.csv',
         batch_size=10,
         temperature=0.1,
-        max_new_tokens=179
+        max_new_tokens=256
     )
