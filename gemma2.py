@@ -34,6 +34,7 @@ def answer_trivia(
     )
 
     generation_config = GenerationConfig(
+        do_sample=True,
         max_new_tokens=max_new_tokens,
         temperature=temperature,
         top_k=top_k,
@@ -60,7 +61,9 @@ Question: {question}<end_of_turn>
         batch = df.iloc[i:i+batch_size]
         batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
         
-        inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True).to(device)
+        inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
+        inputs = {k: v.to("cuda") for k, v in inputs.items()} # Inputs should be on the same device as the model to avoid errors
+        
         outputs = model.generate(**inputs, generation_config=generation_config)
         batch_answers = tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
@@ -74,7 +77,10 @@ Question: {question}<end_of_turn>
                 'Question': q,
                 'Model Answer': a
             })
-        
+
+    
+
+        print("Anwser {}, {}".format(i, a))
         print(f"Processed {i + len(batch)}/{len(df)} questions")
 
     results_df = pd.DataFrame(results)
