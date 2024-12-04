@@ -14,7 +14,7 @@ def answer_trivia(
     top_p=1.0,
     repetition_penalty=1.1
 ):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
@@ -24,11 +24,11 @@ def answer_trivia(
     )
     
     # Wrap the model with DataParallel if multiple GPUs are available
-    if torch.cuda.device_count() > 1:
-        model = nn.DataParallel(model)
+    #if torch.cuda.device_count() > 1:
+    #    model = nn.DataParallel(model)
     
 
-    model = model.to(device)
+    #model = model.to(device)
     
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
