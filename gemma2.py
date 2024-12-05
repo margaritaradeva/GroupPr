@@ -59,6 +59,7 @@ def answer_trivia(
         <start_of_turn>model
         """
 
+
     df = pd.read_csv(input_file)
     results = []
 
