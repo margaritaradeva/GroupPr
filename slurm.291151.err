@@ -1,0 +1,22 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"conda/miniconda3"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "conda/miniconda3"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+EnvironmentNameNotFound: Could not find conda environment: eval_venv
+You can list all discoverable environments with `conda info --envs`.
+
+
+Traceback (most recent call last):
+  File "/scratch/users/u14jp20/eval/GroupPr/gemma2.py", line 2, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+srun: error: gpu01: task 0: Exited with exit code 1

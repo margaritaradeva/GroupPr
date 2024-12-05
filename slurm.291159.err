@@ -1,0 +1,4 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  6.20it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  7.33it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  7.77it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  8.07it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.74it/s]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 291159.0 ON gpu01 CANCELLED AT 2024-12-05T19:32:25 ***
+slurmstepd: error: *** JOB 291159 ON gpu01 CANCELLED AT 2024-12-05T19:32:25 ***
