@@ -49,14 +49,21 @@ def answer_trivia(
     print("generation config loaded")
 
     # Prompt template
-    prompt_template = """<bos><start_of_turn>user
-        Твоята задача е да отговаряш възможно най-кратко на даденен въпрос. Отговорът, който даваш, трябва да бъде точен, кратък и да съдържа само информация, която отговаря на зададения въпрос. Например:
+    # prompt_template = """<bos><start_of_turn>user
+    #     Твоята задача е да отговаряш възможно най-кратко на даденен въпрос. Отговорът, който даваш, трябва да бъде точен, кратък и да съдържа само информация, която отговаря на зададения въпрос. Например:
+    #     Въпрос: Коя е столицата на България?
+    #     Отговор: "София"
+    #     Сега отговори на следния въпрос:
+    #     Question: {question}<end_of_turn>
+    #     <start_of_turn>model
+    #     """
+
+    question_template = """Твоята задача е да отговаряш възможно най-кратко на даденен въпрос. Отговорът, който даваш, трябва да бъде точен, кратък и да съдържа само информация, която отговаря на зададения въпрос. Например:
         Въпрос: Коя е столицата на България?
         Отговор: "София"
-        Сега отговори на следния въпрос:
-        Question: {question}<end_of_turn>
-        <start_of_turn>assistant
-        """
+        Сега отговори на следния въпрос:{question}"""
+    
+    message_template = {"role": "user", "content": ""}
 
     df = pd.read_csv(input_file)
     results = []
@@ -77,7 +84,15 @@ def answer_trivia(
     for i in range(0, len(df), batch_size):
         print("started ", i)
         batch = df.iloc[i:i+batch_size]
-        batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
+        # message["content"] = question_template.format(question=batch['Question'])
+        # batch_prompts = [message_template.copy() for q in batch['Question']]
+        batch_prompts = []
+        for q in batch['Question']:
+            prompt = message_template.copy()
+            prompt["content"] = question_template.format(question=q)
+            batch_prompts.append(prompt)
+
+        # batch_prompts = [message_template.format(question=q) for q in batch['Question']]
         # inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
         # inputs = {k: v.to(device) for k, v in inputs.items()}
         input_ids = tokenizer.apply_chat_template(
