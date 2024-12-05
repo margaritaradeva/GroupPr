@@ -68,7 +68,7 @@ def answer_trivia(
         batch = df.iloc[i:i+batch_size]
         batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
         inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
-        inputs = {k: v.to("cuda") for k, v in inputs.items()}
+        inputs = {k: v.to(device) for k, v in inputs.items()}
         outputs = model.generate(**inputs, generation_config=generation_config)
         batch_answers = tokenizer.batch_decode(outputs, skip_special_tokens=True)
         clean_answers = [clean_model_response(ans) for ans in batch_answers]
