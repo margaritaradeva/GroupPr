@@ -14,6 +14,6 @@
 #SBATCH --mail-user=u14jp20@abdn.ac.uk 
 
 module load miniconda3
-source activate eval_gpu_venv
+source activate eval_venv_cuda
 
 srun python gemma2.py --export=ALL
