@@ -15,8 +15,6 @@ def answer_trivia(
     repetition_penalty=1.1
 ):
 
-    device = torch.device("cpu")# if torch.cuda.is_available() else "cpu")
-    print(f"Using Device: {device}")  
     print("start")
 
     # Model loading
@@ -24,7 +22,7 @@ def answer_trivia(
         model_name,
         torch_dtype=torch.bfloat16,
         attn_implementation="eager",
-        device_map="cpu",
+        device_map="auto",
         # low_cpu_mem_usage=True
     )
 
@@ -72,6 +70,9 @@ def answer_trivia(
             return answer
         return response.strip()
 
+    device = torch.device("cpu")# if torch.cuda.is_available() else "cpu")
+    print(f"Using Device: {device}")  
+    
     # Update the processing section:
     for i in range(0, len(df), batch_size):
         print("started ", i)
