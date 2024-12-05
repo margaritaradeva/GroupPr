@@ -13,7 +13,7 @@
 #SBATCH --mail-type=ALL 
 #SBATCH --mail-user=u14jp20@abdn.ac.uk 
 
-module load miniconda3
+module load conda/miniconda3
 source activate eval_venv
 
 srun python gemma2.py --export=ALL
