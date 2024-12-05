@@ -27,11 +27,15 @@ def answer_trivia(
         low_cpu_mem_usage=True
     )
 
+    print("Model loaded")
+
  
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
         use_default_system_prompt=False
     )
+
+    print("Tokenizer loaded")
 
     generation_config = GenerationConfig(
         do_sample=True,
@@ -42,6 +46,8 @@ def answer_trivia(
         repetition_penalty=repetition_penalty,
         eos_token_id=[1, 107]
     )
+
+    print("Generation config loaded")
 
     # Prompt template
     prompt_template = """<bos><start_of_turn>user
@@ -65,6 +71,7 @@ def answer_trivia(
 
     # Update the processing section:
     for i in range(0, len(df), batch_size):
+        print("starting ", i)
         batch = df.iloc[i:i+batch_size]
         batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
         inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
