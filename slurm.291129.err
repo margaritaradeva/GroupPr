@@ -1,3 +1,0 @@
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** JOB 291129 ON gpu01 CANCELLED AT 2024-12-05T12:46:35 ***
-Downloading shards:   0%|          | 0/12 [00:00<?, ?it/s]Downloading shards:  42%|████▏     | 5/12 [01:15<01:45, 15.04s/it]Downloading shards:  50%|█████     | 6/12 [03:10<03:44, 37.42s/it]Downloading shards:  58%|█████▊    | 7/12 [05:09<04:45, 57.01s/it]Downloading shards:  67%|██████▋   | 8/12 [07:44<05:28, 82.08s/it]slurmstepd: error: *** STEP 291129.0 ON gpu01 CANCELLED AT 2024-12-05T12:46:35 ***

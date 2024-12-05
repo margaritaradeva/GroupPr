@@ -1,20 +1,0 @@
-Lmod has detected the following error: The following module(s) are unknown:
-"conda/miniconda3"
-
-Please check the spelling or version number. Also try "module spider ..."
-It is also possible your cache file is out-of-date; it may help to try:
-  $ module --ignore-cache load "conda/miniconda3"
-
-Also make sure that all modulefiles written in TCL start with the string
-#%Module
-
-
-
-
-EnvironmentNameNotFound: Could not find conda environment: eval_venv
-You can list all discoverable environments with `conda info --envs`.
-
-
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** JOB 291156 ON gpu01 CANCELLED AT 2024-12-05T18:56:40 ***
-Downloading shards:   0%|          | 0/4 [00:00<?, ?it/s]Downloading shards:  25%|██▌       | 1/4 [01:57<05:51, 117.19s/it]slurmstepd: error: *** STEP 291156.0 ON gpu01 CANCELLED AT 2024-12-05T18:56:40 ***
