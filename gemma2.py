@@ -15,8 +15,8 @@ def answer_trivia(
     repetition_penalty=1.1
 ):
 
-    # device = torch.device("cpu")# if torch.cuda.is_available() else "cpu")
-    # print(f"Using Device: {device}")  
+    device = torch.device("cpu")# if torch.cuda.is_available() else "cpu")
+    print(f"Using Device: {device}")  
     print("start")
 
     # Model loading
@@ -24,7 +24,7 @@ def answer_trivia(
         model_name,
         torch_dtype=torch.bfloat16,
         attn_implementation="eager",
-        device_map="auto",
+        device_map="cpu",
         # low_cpu_mem_usage=True
     )
 
@@ -77,15 +77,15 @@ def answer_trivia(
         print("started ", i)
         batch = df.iloc[i:i+batch_size]
         batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
-        # inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
-        # inputs = {k: v.to(device) for k, v in inputs.items()}
-        input_ids = tokenizer.apply_chat_template(
-            batch_prompts,
-            return_tensors="pt",
-            add_generation_prompt=True,
-            return_dict=True
-            )
-        outputs = model.generate(**input_ids, generation_config=generation_config)
+        inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
+        inputs = {k: v.to(device) for k, v in inputs.items()}
+        # input_ids = tokenizer.apply_chat_template(
+        #     batch_prompts,
+        #     return_tensors="pt",
+        #     add_generation_prompt=True,
+        #     return_dict=True
+        #     )
+        outputs = model.generate(**inputs, generation_config=generation_config)
         batch_answers = tokenizer.batch_decode(outputs, skip_special_tokens=True)
         clean_answers = [clean_model_response(ans) for ans in batch_answers]
         
