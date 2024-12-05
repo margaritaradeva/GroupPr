@@ -1,0 +1,154 @@
+Downloading shards:   0%|          | 0/12 [00:00<?, ?it/s]Downloading shards:   8%|▊         | 1/12 [01:57<21:33, 117.58s/it]Downloading shards:  17%|█▋        | 2/12 [03:53<19:26, 116.67s/it]Downloading shards:  25%|██▌       | 3/12 [05:49<17:27, 116.38s/it]Downloading shards:  33%|███▎      | 4/12 [08:00<16:16, 122.08s/it]Error while downloading from https://cdn-lfs-us-1.hf.co/repos/87/84/8784f73d687a25caa815f8b06762c66f73c2c7fef8a703581178c0649f1b3a38/4da11e9db2bb5a4c7da7a9f869ab86b2b2f0aa7cc7780b126272782ad982539c?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00012.safetensors%3B+filename%3D%22model-00005-of-00012.safetensors%22%3B&Expires=1733660901&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczMzY2MDkwMX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzg3Lzg0Lzg3ODRmNzNkNjg3YTI1Y2FhODE1ZjhiMDY3NjJjNjZmNzNjMmM3ZmVmOGE3MDM1ODExNzhjMDY0OWYxYjNhMzgvNGRhMTFlOWRiMmJiNWE0YzdkYTdhOWY4NjlhYjg2YjJiMmYwYWE3Y2M3NzgwYjEyNjI3Mjc4MmFkOTgyNTM5Yz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=EohRlFRvMUG7Y-11kv1b17nO1Anm6ZN9GnbtDnb8f5cls1uq2SN0NmFjfabghqrjFNbpSJpeJUJqEgkf6TYmQtjn9wuF2xG1tI8ixByx5219VD3W20pRz-YfeKMlI6W%7EX-kRdv5GO19lLXwQ8iqBkmTuggRZScD-UdHk%7E8-NNhFHYp6P7jAHpGnExVFrrcbLn8Il10yO5-fWbMwQ6qUIZYQsQItojEmc-So-hiXFikUfXU8xHil0G3Vp1IqVHhPq68fqcGuMsUgMbLdPLP6M6gBRKHQy2ibrHnvkYfTYZBhQ8WNNDjKCY15Wlf2nNmqlq9oLBODzSJ%7ELjj-6VZCK0A__&Key-Pair-Id=K24J24Z295AEI9: HTTPSConnectionPool(host='cdn-lfs-us-1.hf.co', port=443): Read timed out.
+Trying to resume download...
+Downloading shards:  33%|███▎      | 4/12 [09:07<18:14, 136.86s/it]
+Traceback (most recent call last):
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/response.py", line 748, in _error_catcher
+    yield
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/response.py", line 873, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/response.py", line 856, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/http/client.py", line 473, in read
+    s = self.fp.read(amt)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/requests/models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/response.py", line 1060, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/response.py", line 949, in read
+    data = self._raw_read(amt)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/response.py", line 872, in _raw_read
+    with self._error_catcher():
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/response.py", line 753, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.") from e  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='cdn-lfs-us-1.hf.co', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 454, in http_get
+    for chunk in r.iter_content(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/requests/models.py", line 826, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cdn-lfs-us-1.hf.co', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/socket.py", line 974, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x2af01c3f3250>: Failed to resolve 'cdn-lfs-us-1.hf.co' ([Errno -2] Name or service not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='cdn-lfs-us-1.hf.co', port=443): Max retries exceeded with url: /repos/87/84/8784f73d687a25caa815f8b06762c66f73c2c7fef8a703581178c0649f1b3a38/4da11e9db2bb5a4c7da7a9f869ab86b2b2f0aa7cc7780b126272782ad982539c?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00012.safetensors%3B+filename%3D%22model-00005-of-00012.safetensors%22%3B&Expires=1733660901&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczMzY2MDkwMX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzg3Lzg0Lzg3ODRmNzNkNjg3YTI1Y2FhODE1ZjhiMDY3NjJjNjZmNzNjMmM3ZmVmOGE3MDM1ODExNzhjMDY0OWYxYjNhMzgvNGRhMTFlOWRiMmJiNWE0YzdkYTdhOWY4NjlhYjg2YjJiMmYwYWE3Y2M3NzgwYjEyNjI3Mjc4MmFkOTgyNTM5Yz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=EohRlFRvMUG7Y-11kv1b17nO1Anm6ZN9GnbtDnb8f5cls1uq2SN0NmFjfabghqrjFNbpSJpeJUJqEgkf6TYmQtjn9wuF2xG1tI8ixByx5219VD3W20pRz-YfeKMlI6W~X-kRdv5GO19lLXwQ8iqBkmTuggRZScD-UdHk~8-NNhFHYp6P7jAHpGnExVFrrcbLn8Il10yO5-fWbMwQ6qUIZYQsQItojEmc-So-hiXFikUfXU8xHil0G3Vp1IqVHhPq68fqcGuMsUgMbLdPLP6M6gBRKHQy2ibrHnvkYfTYZBhQ8WNNDjKCY15Wlf2nNmqlq9oLBODzSJ~Ljj-6VZCK0A__&Key-Pair-Id=K24J24Z295AEI9 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x2af01c3f3250>: Failed to resolve 'cdn-lfs-us-1.hf.co' ([Errno -2] Name or service not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/users/u01tu20/EvalProject/GroupPr/gemma2.py", line 91, in <module>
+    answer_trivia(
+  File "/scratch/users/u01tu20/EvalProject/GroupPr/gemma2.py", line 22, in answer_trivia
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3974, in from_pretrained
+    resolved_archive_file, sharded_metadata = get_checkpoint_shard_files(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/transformers/utils/hub.py", line 1098, in get_checkpoint_shard_files
+    cached_filename = cached_file(
+                      ^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1011, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1545, in _download_to_tmp_and_move
+    http_get(
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 471, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 368, in http_get
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 300, in _request_wrapper
+    response = get_session().request(method=method, url=url, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 93, in send
+    return super().send(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: (MaxRetryError('HTTPSConnectionPool(host=\'cdn-lfs-us-1.hf.co\', port=443): Max retries exceeded with url: /repos/87/84/8784f73d687a25caa815f8b06762c66f73c2c7fef8a703581178c0649f1b3a38/4da11e9db2bb5a4c7da7a9f869ab86b2b2f0aa7cc7780b126272782ad982539c?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00012.safetensors%3B+filename%3D%22model-00005-of-00012.safetensors%22%3B&Expires=1733660901&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczMzY2MDkwMX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzg3Lzg0Lzg3ODRmNzNkNjg3YTI1Y2FhODE1ZjhiMDY3NjJjNjZmNzNjMmM3ZmVmOGE3MDM1ODExNzhjMDY0OWYxYjNhMzgvNGRhMTFlOWRiMmJiNWE0YzdkYTdhOWY4NjlhYjg2YjJiMmYwYWE3Y2M3NzgwYjEyNjI3Mjc4MmFkOTgyNTM5Yz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=EohRlFRvMUG7Y-11kv1b17nO1Anm6ZN9GnbtDnb8f5cls1uq2SN0NmFjfabghqrjFNbpSJpeJUJqEgkf6TYmQtjn9wuF2xG1tI8ixByx5219VD3W20pRz-YfeKMlI6W~X-kRdv5GO19lLXwQ8iqBkmTuggRZScD-UdHk~8-NNhFHYp6P7jAHpGnExVFrrcbLn8Il10yO5-fWbMwQ6qUIZYQsQItojEmc-So-hiXFikUfXU8xHil0G3Vp1IqVHhPq68fqcGuMsUgMbLdPLP6M6gBRKHQy2ibrHnvkYfTYZBhQ8WNNDjKCY15Wlf2nNmqlq9oLBODzSJ~Ljj-6VZCK0A__&Key-Pair-Id=K24J24Z295AEI9 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x2af01c3f3250>: Failed to resolve \'cdn-lfs-us-1.hf.co\' ([Errno -2] Name or service not known)"))'), '(Request ID: 867fe5fc-9bf4-4fe6-8410-bde6cf67158c)')
+srun: error: gpu01: task 0: Exited with exit code 1
