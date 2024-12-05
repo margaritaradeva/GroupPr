@@ -16,7 +16,8 @@ def answer_trivia(
 ):
 
     device = torch.device("cpu")# if torch.cuda.is_available() else "cpu")
-    # print(f"Using Device: {device}")    
+    print(f"Using Device: {device}")  
+    print("other print")  
 
     # Model loading
     model = AutoModelForCausalLM.from_pretrained(
