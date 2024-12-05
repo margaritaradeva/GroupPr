@@ -55,7 +55,7 @@ def answer_trivia(
         Отговор: "София"
         Сега отговори на следния въпрос:
         Question: {question}<end_of_turn>
-        <start_of_turn>model
+        <start_of_turn>assistant
         """
 
     df = pd.read_csv(input_file)
@@ -70,23 +70,23 @@ def answer_trivia(
             return answer
         return response.strip()
 
-    device = torch.device("cpu")# if torch.cuda.is_available() else "cpu")
-    print(f"Using Device: {device}")  
-    
+    # device = torch.device("cpu")# if torch.cuda.is_available() else "cpu")
+    # print(f"Using Device: {device}")  
+
     # Update the processing section:
     for i in range(0, len(df), batch_size):
         print("started ", i)
         batch = df.iloc[i:i+batch_size]
         batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
-        inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
-        inputs = {k: v.to(device) for k, v in inputs.items()}
-        # input_ids = tokenizer.apply_chat_template(
-        #     batch_prompts,
-        #     return_tensors="pt",
-        #     add_generation_prompt=True,
-        #     return_dict=True
-        #     )
-        outputs = model.generate(**inputs, generation_config=generation_config)
+        # inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
+        # inputs = {k: v.to(device) for k, v in inputs.items()}
+        input_ids = tokenizer.apply_chat_template(
+            batch_prompts,
+            return_tensors="pt",
+            add_generation_prompt=True,
+            return_dict=True
+            )
+        outputs = model.generate(**input_ids, generation_config=generation_config)
         batch_answers = tokenizer.batch_decode(outputs, skip_special_tokens=True)
         clean_answers = [clean_model_response(ans) for ans in batch_answers]
         
