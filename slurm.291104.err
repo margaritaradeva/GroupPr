@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/scratch/users/u01tu20/EvalProject/GroupPr/gemma2.py", line 1, in <module>
-    import pandas as pd
-ModuleNotFoundError: No module named 'pandas'
-srun: error: gpu01: task 0: Exited with exit code 1
