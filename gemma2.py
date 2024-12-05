@@ -65,6 +65,7 @@ def answer_trivia(
 
     # Update the processing section:
     for i in range(0, len(df), batch_size):
+        print("started ", i)
         batch = df.iloc[i:i+batch_size]
         batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
         inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
