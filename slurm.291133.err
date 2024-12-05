@@ -1,0 +1,15 @@
+Downloading shards:   0%|          | 0/4 [00:00<?, ?it/s]Downloading shards:  25%|██▌       | 1/4 [01:56<05:49, 116.55s/it]Downloading shards:  50%|█████     | 2/4 [03:54<03:54, 117.47s/it]Downloading shards:  75%|███████▌  | 3/4 [05:53<01:57, 117.92s/it]Downloading shards: 100%|██████████| 4/4 [07:20<00:00, 105.75s/it]Downloading shards: 100%|██████████| 4/4 [07:20<00:00, 110.05s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  5.40it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.80it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.85it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.34it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.10it/s]
+Traceback (most recent call last):
+  File "/scratch/users/u01tu20/EvalProject/GroupPr/gemma2.py", line 88, in <module>
+    answer_trivia(
+  File "/scratch/users/u01tu20/EvalProject/GroupPr/gemma2.py", line 71, in answer_trivia
+    inputs = {k: v.to("cuda") for k, v in inputs.items()}
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/u01tu20/EvalProject/GroupPr/gemma2.py", line 71, in <dictcomp>
+    inputs = {k: v.to("cuda") for k, v in inputs.items()}
+                 ^^^^^^^^^^^^
+  File "/home/u01tu20/sharedscratch/.conda/envs/EvalAlphaEnvTest/lib/python3.11/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+srun: error: gpu01: task 0: Exited with exit code 1
