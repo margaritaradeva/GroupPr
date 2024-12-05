@@ -92,6 +92,7 @@ def answer_trivia(
             prompt["content"] = question_template.format(question=q)
             batch_prompts.append(prompt)
 
+        print("batch_prompts: ", batch_prompts)
         # batch_prompts = [message_template.format(question=q) for q in batch['Question']]
         # inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
         # inputs = {k: v.to(device) for k, v in inputs.items()}
