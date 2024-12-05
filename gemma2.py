@@ -45,47 +45,44 @@ def answer_trivia(
 
     # Prompt template
     prompt_template = """<bos><start_of_turn>user
-Вашата задача е да отговаряте възможно най-кратко на въпроси. Отговорът трябва да бъде точен, но не по-дълъг от едно изречение. Например:
-Въпрос: Каква е столицата на България?
-Отговор: "София"
-
-Сега отговорете на следния въпрос:
-Question: {question}<end_of_turn>
-<start_of_turn>model
-"""
+        Вашата задача е да отговаряте възможно най-кратко на въпроси. Отговорът трябва да бъде точен, но не по-дълъг от едно изречение. Например:
+        Въпрос: Каква е столицата на България?
+        Отговор: "София"
+        Сега отговорете на следния въпрос:
+        Question: {question}<end_of_turn>
+        <start_of_turn>model
+        """
 
     df = pd.read_csv(input_file)
     results = []
 
+    def clean_model_response(response):
+        if "model" in response:
+            parts = response.split("model")
+            answer = parts[-1].strip()
+            return answer
+        return response.strip()
+
+    # Update the processing section:
     for i in range(0, len(df), batch_size):
         batch = df.iloc[i:i+batch_size]
         batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
-        
         inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
-        inputs = {k: v.to("cuda") for k, v in inputs.items()} # Inputs should be on the same device as the model to avoid errors
-        
+        inputs = {k: v.to("cuda") for k, v in inputs.items()}
         outputs = model.generate(**inputs, generation_config=generation_config)
         batch_answers = tokenizer.batch_decode(outputs, skip_special_tokens=True)
-
-        clean_answers = [
-            ans.split('<end_of_turn>')[1].strip() if '<end_of_turn>' in ans else ans.strip()
-            for ans in batch_answers
-        ]
+        clean_answers = [clean_model_response(ans) for ans in batch_answers]
         
         for q, a in zip(batch['Question'], clean_answers):
             results.append({
                 'Question': q,
                 'Model Answer': a
             })
-
-    
-
-        print("Anwser {}, {}".format(i, a))
         print(f"Processed {i + len(batch)}/{len(df)} questions")
 
-    results_df = pd.DataFrame(results)
-    results_df.to_csv(output_file, index=False)
-    print(f"Results saved to {output_file}")
+        results_df = pd.DataFrame(results)
+        results_df.to_csv(output_file, index=False)
+        print(f"Results saved to {output_file}")
 
 if __name__ == "__main__":
     answer_trivia(
