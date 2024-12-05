@@ -24,7 +24,7 @@ def answer_trivia(
         torch_dtype=torch.bfloat16,
         device_map="auto",
         low_cpu_mem_usage=True,
-        use_flash_attn_2=True
+        # use_flash_attn_2=True
     )
 
     print("Model loaded")
@@ -37,17 +37,17 @@ def answer_trivia(
 
     print("Tokenizer loaded")
 
-    generation_config = GenerationConfig(
-        do_sample=True,
-        max_new_tokens=max_new_tokens,
-        temperature=temperature,
-        top_k=top_k,
-        top_p=top_p,
-        repetition_penalty=repetition_penalty,
-        eos_token_id=[1, 107]
-    )
+    # generation_config = GenerationConfig(
+    #     do_sample=True,
+    #     max_new_tokens=max_new_tokens,
+    #     temperature=temperature,
+    #     top_k=top_k,
+    #     top_p=top_p,
+    #     repetition_penalty=repetition_penalty,
+    #     eos_token_id=[1, 107]
+    # )
 
-    print("Generation config loaded")
+    # print("Generation config loaded")
 
     # Prompt template
     prompt_template = """<s>[INST]
