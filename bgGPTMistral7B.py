@@ -94,7 +94,7 @@ def answer_trivia(
 if __name__ == "__main__":
     answer_trivia(
         input_file='trivia_qa_bulgarian.csv',
-        output_file='trivia_answers.csv',
+        output_file='trivia_answers_bgGPT.csv',
         batch_size=2,
         temperature=0.1,
         max_new_tokens=256
