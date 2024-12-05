@@ -16,7 +16,7 @@ def answer_trivia(
 ):
 
     device = torch.device("cpu")# if torch.cuda.is_available() else "cpu")
-    print(f"Using Device: {device}")
+    print(f"Using Device: {device}")    
 
     # Model loading
     model = AutoModelForCausalLM.from_pretrained(
@@ -24,14 +24,18 @@ def answer_trivia(
         torch_dtype=torch.bfloat16,
         attn_implementation="eager",
         device_map="auto",
-        low_cpu_mem_usage=True
+        # low_cpu_mem_usage=True
     )
+
+    print("model loaded")
 
  
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
         use_default_system_prompt=False
     )
+
+    print("tokenizer loaded")
 
     generation_config = GenerationConfig(
         do_sample=True,
@@ -42,6 +46,8 @@ def answer_trivia(
         repetition_penalty=repetition_penalty,
         eos_token_id=[1, 107]
     )
+
+    print("generation config loaded")
 
     # Prompt template
     prompt_template = """<bos><start_of_turn>user
@@ -55,6 +61,8 @@ def answer_trivia(
 
     df = pd.read_csv(input_file)
     results = []
+
+    print('df head: ', df.head())
 
     def clean_model_response(response):
         if "model" in response:
