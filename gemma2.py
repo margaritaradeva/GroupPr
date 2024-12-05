@@ -6,7 +6,7 @@ import torch.nn as nn
 def answer_trivia(
     input_file,
     output_file,
-    model_name="INSAIT-Institute/BgGPT-Gemma-2-27B-IT-v1.0",
+    model_name="INSAIT-Institute/BgGPT-Gemma-2-9B-IT-v1.0",
     batch_size=10,
     max_new_tokens=256,
     temperature=0.1,
