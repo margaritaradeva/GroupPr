@@ -1,6 +1,7 @@
 import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
+import torch.nn as nn
 
 def answer_trivia(
     input_file,
@@ -15,23 +16,27 @@ def answer_trivia(
 ):
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Using Device: {device}")
+    print(f"Using Device: {device}")  
+    print("other print")  
 
-    # Load model and tokenizer
+    # Model loading
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.bfloat16,
+        attn_implementation="eager",
         device_map="auto",
-        low_cpu_mem_usage=True
+        # low_cpu_mem_usage=True
     )
+
+    print("model loaded")
+
+ 
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
         use_default_system_prompt=False
     )
 
-    # Add padding token if necessary
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
+    print("tokenizer loaded")
 
     generation_config = GenerationConfig(
         do_sample=True,
@@ -40,31 +45,36 @@ def answer_trivia(
         top_k=top_k,
         top_p=top_p,
         repetition_penalty=repetition_penalty,
-        eos_token_id=tokenizer.eos_token_id
+        eos_token_id=[1, 107]
     )
 
-    # Simplified prompt template
-    prompt_template = """Twoim zadaniem jest spojrzeć na pytanie z zakresu ciekawostek i odpowiedzieć na nie zwięźle. Interesuje nas wyłącznie odpowiedź, bez żadnych dodatkowych informacji wokół niej.
-Najpierw podam przykład pytania i odpowiedzi, a następnie odpowiesz na nowe pytanie.
-Oto przykład pytania i prawidłowej odpowiedzi:
-‘‘‘
-Pytanie: Jaka jest stolica Bułgarii?
-Idealna odpowiedź: Sofia
-‘‘‘
-Ta odpowiedź jest idealna, ponieważ jest zwięzła i poprawnie odpowiada na pytanie, bez żadnych dodatkowych informacji.
-Format odpowiedzi powinien wyglądać następująco:
-„Sofia” - otocz odpowiedź podwójnymi cudzysłowami."""
+    print("generation config loaded")
+
+    # Prompt template
+    prompt_template = """<bos><start_of_turn>user
+        Twoim zadaniem jest odpowiadać na podane pytania możliwie najkrócej. Odpowiedź, którą podajesz, musi być dokładna, zwięzła i zawierać tylko informacje odpowiadające na zadane pytanie. Na przykład:
+        Pytanie: Jaka jest stolica Bułgarii?
+        Odpowiedź: "Sofia"
+        Teraz odpowiedz na następujące pytanie:
+        Pytanie: {question}<end_of_turn>
+        <start_of_turn>model
+        """
 
     df = pd.read_csv(input_file)
     results = []
 
-    def clean_model_response(response):
-        # Remove any stray characters or text beyond the expected answer
-        return response.strip().split("\n")[0].strip().replace('"', '')
+    print('df head: ', df.head())
 
-    # Process in batches
+    def clean_model_response(response):
+        if "model" in response:
+            parts = response.split("model")
+            answer = parts[-1].strip()
+            return answer
+        return response.strip()
+
+    # Update the processing section:
     for i in range(0, len(df), batch_size):
-        print(f"Processing batch starting at index {i}")
+        print("started ", i)
         batch = df.iloc[i:i+batch_size]
         batch_prompts = [prompt_template.format(question=q) for q in batch['Question']]
         inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True, max_length=512)
@@ -72,7 +82,7 @@ Format odpowiedzi powinien wyglądać następująco:
         outputs = model.generate(**inputs, generation_config=generation_config)
         batch_answers = tokenizer.batch_decode(outputs, skip_special_tokens=True)
         clean_answers = [clean_model_response(ans) for ans in batch_answers]
-        print("Batch Prompts:", batch_prompts[:5])
+        
         for q, a in zip(batch['Question'], clean_answers):
             results.append({
                 'Question': q,
@@ -80,7 +90,6 @@ Format odpowiedzi powinien wyglądać następująco:
             })
         print(f"Processed {i + len(batch)}/{len(df)} questions")
 
-        # Save results to file
         results_df = pd.DataFrame(results)
         results_df.to_csv(output_file, index=False)
         print(f"Results saved to {output_file}")
@@ -88,7 +97,7 @@ Format odpowiedzi powinien wyglądać następująco:
 if __name__ == "__main__":
     answer_trivia(
         input_file='trivia_qa_polish.csv',
-        output_file='polish_answers_bielik.csv',
+        output_file='trivia_answers_polish.csv',
         batch_size=2,
         temperature=0.1,
         max_new_tokens=256
