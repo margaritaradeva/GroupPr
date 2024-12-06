@@ -16,4 +16,4 @@
 module load miniconda3
 source activate eval_venv_cuda
 
-srun python bielik.py --export=ALL
+srun python en_gemma2.py --export=ALL
