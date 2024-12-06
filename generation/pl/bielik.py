@@ -25,7 +25,7 @@ def answer_trivia(
         torch_dtype=torch.bfloat16,
         attn_implementation="eager",
         device_map="auto",
-        # low_cpu_mem_usage=True
+        low_cpu_mem_usage=True
     )
 
     print("model loaded")
@@ -102,7 +102,7 @@ if __name__ == "__main__":
     answer_trivia(
         input_file='../../data/input/trivia_qa_polish.csv',
         output_file='../../data/output/pl/trivia_answers_polish_bielik.csv',
-        batch_size=2,
+        batch_size=1,
         temperature=0.1,
         max_new_tokens=256
     )
