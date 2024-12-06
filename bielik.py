@@ -45,7 +45,8 @@ def answer_trivia(
         top_k=top_k,
         top_p=top_p,
         repetition_penalty=repetition_penalty,
-        eos_token_id=[1, 107]
+        eos_token_id = tokenizer.eos_token_id,
+        pad_token_id = tokenizer.pad_token_id
     )
 
     print("generation config loaded")
