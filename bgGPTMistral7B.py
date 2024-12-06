@@ -44,7 +44,8 @@ def answer_trivia(
         top_k=top_k,
         top_p=top_p,
         repetition_penalty=repetition_penalty,
-        eos_token_id=tokenizer.eos_token_id
+        eos_token_id=tokenizer.eos_token_id,
+        pad_token_id=tokenizer.pad_token_id
     )
 
     # print("Generation config loaded")
@@ -79,7 +80,7 @@ def answer_trivia(
         outputs = model.generate(**inputs, generation_config=generation_config)
         batch_answers = tokenizer.batch_decode(outputs, skip_special_tokens=True)
         clean_answers = [clean_model_response(ans) for ans in batch_answers]
-        
+
         for q, a in zip(batch['Question'], clean_answers):
             results.append({
                 'Question': q,
