@@ -15,6 +15,7 @@ def answer_trivia(
     repetition_penalty=1.1
 ):
 
+    torch.cuda.empty_cache()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using Device: {device}")  
     print("other print")  
