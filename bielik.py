@@ -6,7 +6,7 @@ import torch.nn as nn
 def answer_trivia(
     input_file,
     output_file,
-    model_name="speakleash/Bielik-11B-v2.3-Instruct-GPTQ",
+    model_name="speakleash/Bielik-11B-v2.3-Instruct",
     batch_size=10,
     max_new_tokens=256,
     temperature=0.1,
@@ -51,14 +51,13 @@ def answer_trivia(
     print("generation config loaded")
 
     # Prompt template
-    prompt_template = """<bos><start_of_turn>user
+    prompt_template = """<s>[INST] <<SYS>>
         Twoim zadaniem jest odpowiadać na podane pytania możliwie najkrócej. Odpowiedź, którą podajesz, musi być dokładna, zwięzła i zawierać tylko informacje odpowiadające na zadane pytanie. Na przykład:
         Pytanie: Jaka jest stolica Bułgarii?
         Odpowiedź: "Sofia"
-        Teraz odpowiedz na następujące pytanie:
-        Pytanie: {question}<end_of_turn>
-        <start_of_turn>model
-        """
+        <</SYS>>
+
+        Pytanie: {question} [/INST]"""
 
     df = pd.read_csv(input_file)
     results = []
@@ -97,7 +96,7 @@ def answer_trivia(
 if __name__ == "__main__":
     answer_trivia(
         input_file='trivia_qa_polish.csv',
-        output_file='trivia_answers_polish.csv',
+        output_file='trivia_answers_polish_bielik.csv',
         batch_size=2,
         temperature=0.1,
         max_new_tokens=256
