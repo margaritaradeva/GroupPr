@@ -2,11 +2,11 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 import torch.nn as nn
-
+access_token = "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"
 def answer_trivia(
     input_file,
     output_file,
-    model_name="speakleash/Bielik-7B-Instruct-v0.1",
+    model_name="mistralai/Mistral-7B-Instruct-v0.3",
     batch_size=10,
     max_new_tokens=256,
     temperature=0.1,
@@ -25,6 +25,7 @@ def answer_trivia(
         torch_dtype=torch.bfloat16,
         attn_implementation="eager",
         device_map="auto",
+        token = access_token,
         low_cpu_mem_usage=True
     )
 
@@ -33,7 +34,8 @@ def answer_trivia(
  
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
-        use_default_system_prompt=False
+        use_default_system_prompt=False,
+        token = access_token
     )
 
     print("tokenizer loaded")
@@ -57,12 +59,20 @@ def answer_trivia(
 
     # Prompt template
     prompt_template = """<s>[INST] <<SYS>>
-        Twoim zadaniem jest odpowiadać na podane pytania możliwie najkrócej. Odpowiedź, którą podajesz, musi być dokładna, zwięzła i zawierać tylko informacje odpowiadające na zadane pytanie. Na przykład:
-        Pytanie: Jaka jest stolica Bułgarii?
-        Odpowiedź: "Sofia"
+       Your task is to answer the given question as concisely as possible.The given answer needs to be precise, concise and contain the information that the question is asking for. For example:
+        Question: "What is the capital of Bulgaria?"
+        Answer: "Sophia"
         <</SYS>>
 
-        Pytanie: {question} [/INST]"""
+        Question: {question} [/INST]"""
+
+    # prompt_template = """<s>[INST] <<SYS>>
+    #     Twoim zadaniem jest odpowiadać na podane pytania możliwie najkrócej. Odpowiedź, którą podajesz, musi być dokładna, zwięzła i zawierać tylko informacje odpowiadające na zadane pytanie. Na przykład:
+    #     Pytanie: Jaka jest stolica Bułgarii?
+    #     Odpowiedź: "Sofia"
+    #     <</SYS>>
+
+    #     Pytanie: {question} [/INST]"""
 
     df = pd.read_csv(input_file)
     results = []
@@ -100,8 +110,8 @@ def answer_trivia(
 
 if __name__ == "__main__":
     answer_trivia(
-        input_file='../../data/input/trivia_qa_polish.csv',
-        output_file='../../data/output/pl/trivia_answers_polish_bielik.csv',
+        input_file='../../data/input/trivia_qa_chosen.csv',
+        output_file='../../data/output/en/trivia_answers_english_mistral.csv',
         batch_size=2,
         temperature=0.1,
         max_new_tokens=256
