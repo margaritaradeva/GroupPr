@@ -37,6 +37,9 @@ def answer_trivia(
     )
 
     print("tokenizer loaded")
+    if tokenizer.pad_token_id is None:
+        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        model.resize_token_embeddings(len(tokenizer))
 
     generation_config = GenerationConfig(
         do_sample=True,
@@ -46,6 +49,8 @@ def answer_trivia(
         top_p=top_p,
         repetition_penalty=repetition_penalty,
         eos_token_id = tokenizer.eos_token_id,
+        pad_token_id = tokenizer.pad_token_id
+        
     )
 
     print("generation config loaded")
@@ -96,7 +101,7 @@ def answer_trivia(
 if __name__ == "__main__":
     answer_trivia(
         input_file='../../data/input/trivia_qa_polish.csv',
-        output_file='../../data/output/trivia_answers_polish_bielik.csv',
+        output_file='../../data/output/pl/trivia_answers_polish_bielik.csv',
         batch_size=2,
         temperature=0.1,
         max_new_tokens=256
