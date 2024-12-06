@@ -9,4 +9,4 @@ for answer in answers["Model Answer"]:
         new_answer = answer[:start] + answer[end + len('[/INST]'):]
         answers.loc[answers["Model Answer"] == answer, "Model Answer"] = new_answer.strip()
 
-answers.to_csv("trivia_answers_bgGPT_corrected.csv", index=False)
+answers.to_csv("../../data/output/trivia_answers_bgGPT_corrected.csv", index=False)
