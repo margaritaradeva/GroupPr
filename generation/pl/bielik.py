@@ -15,6 +15,7 @@ def answer_trivia(
     repetition_penalty=1.1
 ):
 
+    torch.cuda.empty_cache()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using Device: {device}")  
     print("other print")  
@@ -102,7 +103,7 @@ if __name__ == "__main__":
     answer_trivia(
         input_file='../../data/input/trivia_qa_polish.csv',
         output_file='../../data/output/pl/trivia_answers_polish_bielik.csv',
-        batch_size=2,
+        batch_size=1,
         temperature=0.1,
         max_new_tokens=256
     )
