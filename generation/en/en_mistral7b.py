@@ -9,8 +9,8 @@ torch.cuda.empty_cache()
 def answer_trivia(
     input_file,
     output_file,
-    model_name="TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
-    file_name="mistral-7b-instruct-v0.2.Q5_K_S.gguf",
+    model_name="TheBloke/Mistral-7B-Instruct-v0.2-GPTQ",
+    file_name="TheBloke/Mistral-7B-Instruct-v0.2-GPTQ",
     batch_size=1,
     max_new_tokens=256,
     temperature=0.1,
@@ -26,7 +26,7 @@ def answer_trivia(
     # Model loading
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        gguf_file=file_name,
+        #gguf_file=file_name,
         torch_dtype=torch.bfloat16,
         #attn_implementation="eager",
         #device_map="auto",
@@ -38,7 +38,7 @@ def answer_trivia(
  
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
-        gguf_file=file_name,
+        #gguf_file=file_name,
         use_default_system_prompt=False,
         #token = access_token
     )
@@ -115,8 +115,8 @@ def answer_trivia(
 
 if __name__ == "__main__":
     answer_trivia(
-        input_file='../../data/input/trivia_qa_chosen.csv',
-        output_file='../../data/output/en/trivia_answers_english_mistral.csv',
+        input_file='data/input/trivia_qa_chosen.csv',
+        output_file='data/output/en/trivia_answers_english_mistral.csv',
         batch_size=1,
         temperature=0.1,
         max_new_tokens=256
