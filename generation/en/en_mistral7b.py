@@ -30,7 +30,7 @@ def answer_trivia(
         token = access_token,
         low_cpu_mem_usage=True
     )
-
+    model = model.to(device)
     print("model loaded")
 
  
