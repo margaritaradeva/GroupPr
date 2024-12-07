@@ -14,6 +14,6 @@
 #SBATCH --mail-user=u14jp20@abdn.ac.uk 
 
 module load miniconda3
-source activate eval_venv_cuda
+source activate cuda_new_venv
 
 srun python bielik.py --export=ALL
