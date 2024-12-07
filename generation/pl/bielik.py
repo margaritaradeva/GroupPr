@@ -6,7 +6,8 @@ import torch.nn as nn
 def answer_trivia(
     input_file,
     output_file,
-    model_name="speakleash/Bielik-7B-Instruct-v0.1",
+    model_name="speakleash/Bielik-7B-Instruct-v0.1-GGUF",
+    file_name="bielik-7b-instruct-v0.1.Q5_K_S.gguf",
     batch_size=10,
     max_new_tokens=256,
     temperature=0.1,
@@ -23,6 +24,7 @@ def answer_trivia(
     # Model loading
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
+        gguf_file=file_name,
         torch_dtype=torch.bfloat16,
         attn_implementation="eager",
         device_map="auto",
@@ -34,6 +36,7 @@ def answer_trivia(
  
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
+        gguf_file=file_name,
         use_default_system_prompt=False
     )
 
