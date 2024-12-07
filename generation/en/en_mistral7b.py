@@ -11,7 +11,7 @@ def answer_trivia(
     output_file,
     model_name="TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
     file_name="mistral-7b-instruct-v0.2.Q5_K_S.gguf",
-    batch_size=10,
+    batch_size=1,
     max_new_tokens=256,
     temperature=0.1,
     top_k=25,
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     answer_trivia(
         input_file='../../data/input/trivia_qa_chosen.csv',
         output_file='../../data/output/en/trivia_answers_english_mistral.csv',
-        batch_size=2,
+        batch_size=1,
         temperature=0.1,
         max_new_tokens=256
     )
