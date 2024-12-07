@@ -2,7 +2,11 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 import torch.nn as nn
+import gc
+del variables
 access_token = "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"
+gc.collect()
+torch.cuda.empty_cache()
 def answer_trivia(
     input_file,
     output_file,
