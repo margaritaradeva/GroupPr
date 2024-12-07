@@ -6,7 +6,7 @@ access_token = "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"
 def answer_trivia(
     input_file,
     output_file,
-    model_name="mistralai/Mistral-7B-Instruct-v0.3",
+    model_name="TheBloke/Mistral-7B-Instruct-v0.2-GPTQ",
     batch_size=10,
     max_new_tokens=256,
     temperature=0.1,
