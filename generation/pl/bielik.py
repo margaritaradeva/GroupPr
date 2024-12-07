@@ -25,10 +25,10 @@ def answer_trivia(
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         gguf_file=file_name,
-        torch_dtype=torch.bfloat16,
-        attn_implementation="eager",
-        device_map="auto",
-        low_cpu_mem_usage=True
+        #torch_dtype=torch.bfloat16,
+        #attn_implementation="eager",
+        #device_map="auto",
+        #low_cpu_mem_usage=True
     )
 
     print("model loaded")
