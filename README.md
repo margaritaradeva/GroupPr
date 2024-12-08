@@ -17,7 +17,7 @@
 #### Generation Scripts (`generation/`) for MacLaod/ Local Machine Testing 
 - **Bulgarian models (`bg/`)**: Scripts for running Bulgarian model evaluations
 - **Polish models (`pl/`)**: Scripts for executing Polish model evaluations  
-- **English models (`pl/`)**: Scripts for executing English model evaluations  
+- **English models (`en/`)**: Scripts for executing English model evaluations  
 
 ---
 
