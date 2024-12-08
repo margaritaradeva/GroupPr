@@ -3,7 +3,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 import torch.nn as nn
 import gc
-access_token = "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"
+access_token = "TOKEN"
 gc.collect()
 torch.cuda.empty_cache()
 def answer_trivia(
