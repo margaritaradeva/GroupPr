@@ -1,4 +1,18 @@
-# CS5063 Evaluation of AI Systems Group Project Repository Structure
+# CS5063 Evaluation of AI Systems Group Project 
+## Research Project
+The project focuses on evaluating 6 large language models (LLMs) across different languages, specifically Polish, Bulgarian, and English and comparing their hallucination levels.
+## Models Compared
+### Bulgarian Models
+- **BGGPT (1st Version)**: The initial iteration of the Bulgarian language model.
+- **BGGPT (2nd Version)**: An enhanced version based on the Gemma2 architecture, incorporating advanced features for improved performance.
+
+### Polish Models
+- **Bielik**: A model built on the Mistral architecture, specifically optimized for Polish language tasks.
+- **TRURL**: TRURL chatbot is the first Polish language model similar to ChatGPT, which was created by VoiceLab.AI, based on LLAMa2 achitecture.
+
+### English Models
+- **Mistral**: With top-tier reasoning capabilities and excels in advanced reasoning, multilingual tasks, math, and code generation. T
+- **Gemma2**: A successor to the previous Gemma models with multilanguage capacities, designed to excel in multilingual tasks.
 
 ## Pipeline 
 ![Pipeline Diagram](https://github.com/margaritaradeva/GroupPr/blob/main/data/figures/pipeline.png)
