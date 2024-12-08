@@ -1,5 +1,7 @@
 # CS5063 Evaluation of AI Systems Group Project Repository Structure
 
+## Pipeline 
+![Pipeline Diagram](https://github.com/margaritaradeva/GroupPr/blob/main/data/figures/pipeline.png)
 ## Repository Structure
 
 ### 1. Data
