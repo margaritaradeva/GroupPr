@@ -7,7 +7,7 @@ def answer_trivia(
     input_file,
     output_file,
     model_name="INSAIT-Institute/BgGPT-Gemma-2-9B-IT-v1.0",
-    batch_size=10,
+    batch_size=1,
     max_new_tokens=256,
     temperature=0.1,
     top_k=25,
