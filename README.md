@@ -48,4 +48,4 @@ The project focuses on evaluating 6 large language models (LLMs) across differen
 
 ---
 ### 4. Resuls 
-![Results]([https://github.com/margaritaradeva/GroupPr/blob/main/data/figures/pipeline.png](https://github.com/margaritaradeva/GroupPr/blob/main/plots/results.png))
+![Results](https://github.com/margaritaradeva/GroupPr/blob/main/plots/results.png)
