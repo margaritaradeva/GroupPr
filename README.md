@@ -47,5 +47,8 @@ The project focuses on evaluating 6 large language models (LLMs) across differen
   - `classifications.ipynb`: Notebook for creating visual summaries for the results of SimpleQA.
 
 ---
-### 4. Resuls 
+### 4. Hallucionation metric
+We employed as part of our study, a metric recently developed by OpenAI, SimpleQA and translated it into Bulgarian and Polish.
+---
+### 5. Resuls 
 ![Results](https://github.com/margaritaradeva/GroupPr/blob/main/plots/results.png)
