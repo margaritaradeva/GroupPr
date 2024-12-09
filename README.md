@@ -48,7 +48,7 @@ The project focuses on evaluating 6 large language models (LLMs) across differen
 
 ---
 ### 4. Hallucionation metric
-We employed as part of our study, a metric recently developed by OpenAI, SimpleQA and translated it into Bulgarian and Polish.
+We employed as part of our study, a metric recently developed by OpenAI, SimpleQA, and also translated it into Bulgarian and Polish to work with the 4 fine-tuned Slavic models.
 ---
-### 5. Resuls 
+### 5. Results 
 ![Results](https://github.com/margaritaradeva/GroupPr/blob/main/plots/results.png)
