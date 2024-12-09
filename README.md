@@ -8,7 +8,7 @@ The project focuses on evaluating 6 large language models (LLMs) across differen
 
 ### Polish Models
 - **Bielik**: A model built on the Mistral architecture, specifically optimized for Polish language tasks.
-- **TRURL**: TRURL chatbot is the first Polish language model similar to ChatGPT, which VoiceLab.AI, based on LLAMa2 achitecture created.
+- **TRURL**: TRURL chatbot is the first Polish language model similar to ChatGPT, which VoiceLab.AI, based on LLAMa2 architecture created.
 
 ### English Models
 - **Mistral**: With top-tier reasoning capabilities and excels in advanced reasoning, multilingual tasks, math, and code generation. 
@@ -47,7 +47,7 @@ The project focuses on evaluating 6 large language models (LLMs) across differen
   - `classifications.ipynb`: Notebook for creating visual summaries for the results of SimpleQA.
 
 ---
-### 4. Hallucionation metric
+### 4. Hallucination metric
 We employed as part of our study, a metric recently developed by OpenAI, SimpleQA, and also translated it into Bulgarian and Polish to work with the 4 fine-tuned Slavic models.
 ---
 ### 5. Results 
