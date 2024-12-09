@@ -47,3 +47,5 @@ The project focuses on evaluating 6 large language models (LLMs) across differen
   - `classifications.ipynb`: Notebook for creating visual summaries for the results of SimpleQA.
 
 ---
+### 4. Resuls 
+![Results]([https://github.com/margaritaradeva/GroupPr/blob/main/data/figures/pipeline.png](https://github.com/margaritaradeva/GroupPr/blob/main/plots/results.png))
