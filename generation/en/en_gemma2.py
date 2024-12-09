@@ -2,7 +2,7 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 import torch.nn as nn
-access_token = "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"
+access_token = "TOKEN"
 def answer_trivia(
     input_file,
     output_file,

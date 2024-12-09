@@ -7,7 +7,7 @@ def answer_trivia(
     input_file,
     output_file,
     model_name ="INSAIT-Institute/BgGPT-7B-Instruct-v0.2",
-    batch_size=10,
+    batch_size=1,
     max_new_tokens=256,
     temperature=0.1,
     top_k=25,
